@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	// Declarando variáveis.
+	// Declarando variÃ¡veis.
 	char nome[200] = "Marta"; // Cadeia
 	char sexo = 'F'; //Caracter
 	int idade = 20; //Inteiro
@@ -13,7 +13,7 @@ int main() {
 	printf("Sexo: %c \n", sexo); // %c -> char -> caracter
 	printf("Idade: %i \n", idade); // %i -> int -> inteiro
 	printf("Peso: %f \n", peso); // %f -> float -> real
-	
+	getchar();
 	
 	return 0;
 }
