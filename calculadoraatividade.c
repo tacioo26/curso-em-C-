@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 int main(){
+	setlocale(LC_ALL, "");
 	
 	float primeiroNumero, segundoNumero;
 	float soma, subtracao, multiplicacao, divisao;
@@ -18,12 +21,15 @@ int main(){
 	multiplicacao = primeiroNumero * segundoNumero;
 	divisao = primeiroNumero / segundoNumero;
 	
+	system("cls || clear");
+	
 	
 	printf("\n=== Exibindo Resultados ===\n");
-	printf("soma:%f\n", soma);
-	printf("subtracao:%f\n", subtracao);
-	printf("multiplicacao:%f\n", multiplicacao);
-	printf("divisao:%f\n", divisao);
+	
+	printf("soma: %.1f \n", soma);
+	printf("subtracao: %.1f \n", subtracao);
+	printf("multiplicacao: %.1f \n", multiplicacao);
+	printf("divisao: %.1f \n", divisao);
 	
 	
 	return 0;
