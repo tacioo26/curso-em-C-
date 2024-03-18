@@ -18,6 +18,8 @@ int main(){
 	multiplicacao = primeiroNumero * segundoNumero;
 	divisao = primeiroNumero / segundoNumero;
 	
+	
+	printf("\n=== Exibindo Resultados ===\n");
 	printf("soma:%f\n", soma);
 	printf("subtracao:%f\n", subtracao);
 	printf("multiplicacao:%f\n", multiplicacao);
