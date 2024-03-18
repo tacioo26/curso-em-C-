@@ -9,15 +9,16 @@ int main(){
     
     int numero1, numero2, numero3;
     
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%i", &numero1);
     
     numero2 = numero1 + 1;
     numero3 = numero1 - 1;
     
     printf("Resultado: \n");
-    printf("O sucessor deste número é: %i\n",numero2);
-    printf("O antecessor deste número é: %i\n",numero3);
+    printf("O nÃºmero informado Ã©: %i\n",numero1);
+    printf("O sucessor deste nÃºmero Ã©: %i\n",numero2);
+    printf("O antecessor deste nÃºmero Ã©: %i\n",numero3);
     
     return 0;
     
