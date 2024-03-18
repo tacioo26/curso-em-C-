@@ -5,7 +5,9 @@ int main(){
 	
 	char nome[200];
 	int idade;
-	float nota1, nota2, nota3, nota4, media;
+	float primeiraNota, segundaNota, terceiraNota, quartaNota;
+	float soma, media;
+	
 	
 	
 	//Solicitando de dados
@@ -15,32 +17,40 @@ int main(){
 	printf("Digite sua idade: ");
 	scanf("%i",&idade);
 	
-	prinf("Digite a primeira nota: ");
-	scanf("&f",&nota1);
+	fflush(stdin);
 	
-	prinf("Digite a segunda nota: ");
-	scanf("&f",&nota2);
+	printf("Digite a primeira nota: ");
+	scanf("%f",&primeiraNota);
+	fflush(stdin);
 	
-	prinf("Digite a terceira nota: ");
-	scanf("&f",&nota3);
+	printf("Digite a segunda nota: ");
+	scanf("%f",&segundaNota);
+	fflush(stdin);
 	
-	prinf("Digite a quarta nota: ");
-	scanf("&f",&nota4);
+	printf("Digite a terceira nota: ");
+	scanf("%f",&terceiraNota);
+	fflush(stdin);
 	
-	system("cls");
+	printf("Digite a quarta nota: ");
+	scanf("%f",&quartaNota);
+	
+
 	
 	//processar
-	media = (nota1 + nota2 + nota3 + nota4)/4;
+	soma = primeiraNota + segundaNota + terceiraNota + quartaNota;
+	media = soma / 4;
+	
+	system("cls || clear");
 	
 	//saida do resultado
 	printf("\n=== Exibindo Resultados ===\n");
 	printf("Nome: %s \n", nome);
 	printf("Idade: %i \n", idade);
-	printf("Primeira Nota: %.2f\n", nota1);
-	printf("Segunda Nota: %.2f\n", nota2);
-	printf("Terceira Nota: %.2f\n", nota3);
-	printf("Quarta Nota: %.2f\n", nota4);
-	printf("Media do aluno: %.2f\n", media);
+	printf("Primeira Nota: %.1f \n", primeiraNota);
+	printf("Segunda Nota: %.1f \n", segundaNota);
+	printf("Terceira Nota: %.1f \n", terceiraNota);
+	printf("Quarta Nota: %.1f \n", quartaNota);
+	printf("Media do aluno: %.1f \n", media);
 	
 	return 0;
 	
